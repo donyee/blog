@@ -8,7 +8,12 @@
   <entry>
     <title><![CDATA[DataFlow-编程模型]]></title>
     <url>%2F2017%2F07%2F06%2FDataFlow-%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B.html</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[Flink的层次模型Flink最底层提供 stateful streaming，是通过Process Function嵌入到DataStream API中实现的；用户能够方便的处理流中的单个或者多个事件，还能够使用一致的容错状态；并且，用户能够注册事件时间和处理时间的回调，允许程序处理复杂的计算；实践中，许多应用不需要使用低层次的接口，而是使用Core APIS如DataStream API（绑定/未绑定的流）和DataSet API(绑定的数据集)。这些流式API提供了数据处理的基本块，如各种用户自定义的转换、连接、聚合、窗口、状态等等函数；这些API中的数据类型在对应的编程语言中都定义为class；集成在DataStream API的底层Process Function，让某些底层操作更加的方便； DataSet API为绑定的数据集提供了更多的操作如loops/iterations;Table API是围绕tables的声明式DSL，可以动态的修改tables;Table API 遵循(扩展的)关系模型；Tables 有一个对应的schema(和关系数据库的表类似)，并且这些API提供了类似的操作如select、project、join、group by、aggregate等等；Table APi程序声明式的定义好应该完成的操作逻辑，而不是明确的对这些操作进行编码；虽然这些Table API被许多自定义的函数扩展（比Core APIs 廉价），但是更加的简洁；更进一步，Table API程序能够在执行前使用优化器进行优化；用户可以在tables 和 DataStream/DataSet 之间无缝的切换，允许程序混合使用这几种APIs;Flink提供的最高层次接口是SQL, 这些和Table API在语义上以及表达上是类似的，只是程序表现为SQL查询表达式；SQL层和Table API密切互动，并且SQL查询能够在Table API对应的表中执行；Programs and DataflowsFlink 程序的基本块是Streams和transformations;(Flink中的DataSet API 也是通过streams实现的)概念上来说，一个流是一系列的数据记录，transformation是接收一个或者多个流作为输入、生成一个或者多个流作为结果；执行时，Flink程序被映射成streaming dataflows, 由streams和transformation operators组成；每个dataflow 从一个或者多个sources开始，结束于一个或者多个sinks;]]></content>
+      <tags>
+        <tag>大数据</tag>
+        <tag>flink</tag>
+        <tag>dataflow</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[预付款系统架构]]></title>
