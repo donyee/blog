@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title><![CDATA[架构实践-集成apollo配置服务]]></title>
     <url>%2F2018%2F01%2F09%2F%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5-%E9%9B%86%E6%88%90apollo%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1.html</url>
-    <content type="text"><![CDATA[title: 架构实践-集成apollo配置服务date: 2018-01-09 20:54:08tags:系统架构配置服务Apollo分布式系统架构实践-集成apollo配置服务近期公司购买了一套XXX系统，准备新业务的拓展；这个新系统中配置文件一堆，还要区分开发、测试、生产等环境；我之前看过Apollo系统的介绍，大概了解一些，这几天认真研究一下，觉得集成到公司业务系统中非常的合适；简介Apollo 是携程研发部门开源的分布式配置中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时的推送到应用端，适用于微服务配置场景。源码地址 github]]></content>
+    <content type="text"><![CDATA[架构实践-集成apollo配置服务近期公司购买了一套XXX系统，准备新业务的拓展；这个新系统中配置文件一堆，还要区分开发、测试、生产等环境；我之前看过Apollo系统的介绍，大概了解一些，这几天认真研究一下，觉得集成到公司业务系统中非常的合适；简介Apollo 是携程研发部门开源的分布式配置中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时的推送到应用端，适用于微服务配置场景。源码地址 github]]></content>
+      <tags>
+        <tag>系统架构</tag>
+        <tag>配置服务Apollo</tag>
+        <tag>分布式系统</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[RPC视角下的Spark架构]]></title>
