@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo 移到 win10]]></title>
     <url>%2F2018%2F02%2F05%2Fhexo-tips.html</url>
-    <content type="text"><![CDATA[Hexo 移到 win10之前在Mac本上搭建了hexo环境，配置发布到github,还花了￥150申请了域名；但是一直没写几篇文章，233！（早就猜到是这个结果）这两天打算继续写起来，但是目前主要使用的电脑是win10+ThinkPad t470p(不推荐买这个本，没有为什么)，所以就把hexo安装到win10上，把之前的blog打包过来；这里记录下遇到的几个问题；gifsicle.exe 文件找不到；这个应该是优化生成的blog文章时用到的，我把 _config.yaml 中的 image_minifier enable 改成false; 不使用这个优化，就不会去找那个文件；（解决不了问题，就解决提问题的程序）配置github public key; ‘ssh-keygen -t rsa’ 一路回车即可（我使用的是git bash）；然后把 ~/.ssh/id_rsa.pub 这个文件写到 github 新建的ssh key 就可以；PaxHeader 乱码文件；我再mac上使用tar打包的，再win10使用7zip解压，结果多了一些 PaxHeader 文件，改成使用zip 压缩就能解决；（用tar 压缩时加上参数也可以解决，搜索时看到的，未测试）MD编辑器使用的是VS code;可以愉快的写blog啦！]]></content>
+    <content type="text"><![CDATA[Hexo 移到 win10之前在Mac本上搭建了hexo环境，配置发布到github,还花了￥150申请了域名；但是一直没写几篇文章，233！（早就猜到是这个结果）这两天打算继续写起来，但是目前主要使用的电脑是win10+ThinkPad t470p(不推荐买这个本，没有为什么)，所以就把hexo安装到win10上，把之前的blog打包过来；这里记录下遇到的几个问题；gifsicle.exe 文件找不到；这个应该是优化生成的blog文章时用到的，我把 _config.yaml 中的 image_minifier enable 改成false; 不使用这个优化，就不会去找那个文件；（解决不了问题，就解决提问题的程序）配置github public key; 一路回车即可（我使用的是git bash）；然后把 ~/.ssh/id_rsa.pub 这个文件写到 github 新建的ssh key 就可以；命令：ssh-keygen -t rsaPaxHeader 乱码文件；我再mac上使用tar打包的，再win10使用7zip解压，结果多了一些 PaxHeader 文件，改成使用zip 压缩就能解决；（用tar 压缩时加上参数也可以解决，搜索时看到的，未测试）MD编辑器使用的是VS code;可以愉快的写blog啦！]]></content>
       <tags>
         <tag>hexo 配置</tag>
         <tag>win10</tag>
