@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo-tips]]></title>
+    <url>%2F2018%2F02%2F05%2Fhexo-tips.html</url>
+    <content type="text"><![CDATA[Hexo 移到 win10之前在Mac本上搭建了hexo环境，配置发布到github,还花了￥150申请了域名；但是一直没写几篇文章，233！（早就猜到是这个结果）这两天打算继续写起来，但是目前主要使用的电脑是win10+ThinkPad t470p(不推荐买这个本，没有为什么)，所以就把hexo安装到win10上，把之前的blog打包过来；这里记录下遇到的几个问题；gifsicle.exe 文件找不到；这个应该是优化生成的blog文章时用到的，我把 _config.yaml 中的 image_minifier enable 改成false; 不使用这个优化，就不会去找那个文件；（解决不了问题，就解决提问题的程序）配置github public key; ‘ssh-keygen -t rsa’ 一路回车即可（我使用的是git bash）；然后把 ~/.ssh/id_rsa.pub 这个文件写到 github 新建的ssh key 就可以；PaxHeader 乱码文件；我再mac上使用tar打包的，再win10使用7zip解压，结果多了一些 PaxHeader 文件，改成使用zip 压缩就能解决；（用tar 压缩时加上参数也可以解决，搜索时看到的，未测试）MD编辑器使用的是VS code;可以愉快的写blog啦！]]></content>
+      <tags>
+        <tag>hexo 配置</tag>
+        <tag>win10</tag>
+        <tag>hexo 部署 github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[架构实践-集成apollo配置服务]]></title>
     <url>%2F2018%2F01%2F09%2F%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5-%E9%9B%86%E6%88%90apollo%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1.html</url>
     <content type="text"><![CDATA[前言近期公司购买了一套XXX系统，准备新业务的拓展；这个新系统中配置文件一堆，还要区分开发、测试、生产等环境；我之前看过Apollo系统的介绍，大概了解一些，这几天认真研究一下，觉得集成到公司业务系统中非常的合适；简介Apollo 是携程研发部门开源的分布式配置中心，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时的推送到应用端，适用于微服务配置场景。源码地址 github]]></content>
@@ -18,7 +28,7 @@
   <entry>
     <title><![CDATA[spark-交易清算]]></title>
     <url>%2F2017%2F07%2F14%2Fspark-%E4%BA%A4%E6%98%93%E6%B8%85%E7%AE%97.html</url>
-    <content type="text"><![CDATA[spark 交易清算聚合支付机构的支付后端主要对接的是支付宝、微信支付（京东支付、天翼支付等），清算的数据来源主要是这些机构的对账文件，以及本机构的交易流水；经过我的测试，测试步骤如下：使用parquet保存原始交易数据，使用spark 加载，然后创建temp table对数据表进行查询比对处理在数据量不大的时候（几万条），没有优势；然后我对原始数据保存时又加入了一个分区参数（基于商户号分区），还是没有明显改进；使用MySql 查询时速度很快；本文只是后续记录，测试时具体的时间值我没有保存；因为数据没有索引优化时，spark dataset 的处理不会达到数据库的速度；后来看到 Apache Phoenix ，这个应该是可以对数据进行索引的，也能够和spark集成；有空再测试看看；]]></content>
+    <content type="text"><![CDATA[spark 交易清算聚合支付机构的支付后端主要对接的是支付宝、微信支付（京东支付、天翼支付等），清算的数据来源主要是这些机构的对账文件，以及本机构的交易流水；经过我的测试，测试步骤如下：使用parquet保存原始交易数据，使用spark 加载，然后创建temp table对数据表进行查询比对处理在数据量不大的时候（几万条），没有优势；然后我对原始数据保存时又加入了一个分区参数（基于商户号分区），还是没有明显改进；使用MySql 查询时速度很快；本文只是后续记录，测试时具体的时间值我没有保存；因为数据没有索引优化时，spark dataset 的处理不会达到数据库的速度；PS后来看到 Apache Phoenix ，这个应该是可以对数据进行索引的，也能够和spark集成；有空再测试看看；]]></content>
       <tags>
         <tag>spark</tag>
         <tag>聚合支付</tag>
