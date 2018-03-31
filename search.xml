@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[开发小结-20180331]]></title>
+    <url>%2F2018%2F03%2F31%2Fweekly-1.html</url>
+    <content type="text"><![CDATA[开发小结-20180331端口转发命令ssh -CfNg -R 9201:127.0.0.1:8090 root@ip 9201 为服务器端口8090 为本地端口将服务器9201的请求转发到本地8090端口spring boot mvc 设置 httpskeytool -genkey -alias tomcat -dname &quot;CN=Andy,OU=kfit,O=kfit,L=HaiDian,ST=BeiJing,C=CN&quot; -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 365 在application.properties中配置HTTPS#https端口号. server.port: 443 #证书的路径. server.ssl.key-store: classpath:keystore.p12 #证书密码，请修改为您自己证书的密码. server.ssl.key-store-password: 123456 #秘钥库类型 server.ssl.keyStoreType: PKCS12 #证书别名 server.ssl.keyAlias: tomcat 微信支付接口验证微信支付接口有两种参数签名方式MD5HmacSHA256有的接口只支持一种，不要搞错；]]></content>
+      <tags>
+        <tag>spring boot mvc https 配置</tag>
+        <tag>微信接口开发</tag>
+        <tag>ssh 端口转发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[sys-trace-design]]></title>
+    <url>%2F2018%2F03%2F11%2Fsys-trace-design.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[区块链学习小结]]></title>
+    <url>%2F2018%2F02%2F06%2Fblockchain-1.html</url>
+    <content type="text"><![CDATA[区块链学习小结近期看了些比特币、区块链的资料，下载了几分白皮书，看完先总结一些；数据结构Merkle Tree:基于hash值实现树形结构； 参考1Merkle Patricia Tries:以太坊区块中使用的数据结构，MPT实际上是三种数据结构的组合，分别是Trie树， Patricia Trie， 和Merkle树； 参考2P2P：区块链节点间的通信技术，BT下载也是基于这种技术实现；挖矿：计算hash值，这个值在一个范围内；待后续文章详细说一下以太坊的实现；]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[SRE 实践篇一]]></title>
+    <url>%2F2018%2F02%2F06%2Fsre-1.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo 移到 win10]]></title>
     <url>%2F2018%2F02%2F05%2Fhexo-tips.html</url>
     <content type="text"><![CDATA[Hexo 移到 win10之前在Mac本上搭建了hexo环境，配置发布到github,还花了￥150申请了域名；但是一直没写几篇文章，233！（早就猜到是这个结果）这两天打算继续写起来，但是目前主要使用的电脑是win10+ThinkPad t470p(不推荐买这个本，没有为什么)，所以就把hexo安装到win10上，把之前的blog打包过来；这里记录下遇到的几个问题；gifsicle.exe 文件找不到；这个应该是优化生成的blog文章时用到的，我把 _config.yaml 中的 image_minifier enable 改成false; 不使用这个优化，就不会去找那个文件；（解决不了问题，就解决提问题的程序）配置github public key; 一路回车即可（我使用的是git bash）；然后把 ~/.ssh/id_rsa.pub 这个文件写到 github 新建的ssh key 就可以；命令：ssh-keygen -t rsaPaxHeader 乱码文件；我再mac上使用tar打包的，再win10使用7zip解压，结果多了一些 PaxHeader 文件，改成使用zip 压缩就能解决；（用tar 压缩时加上参数也可以解决，搜索时看到的，未测试）MD编辑器使用的是VS code;可以愉快的写blog啦！]]></content>
