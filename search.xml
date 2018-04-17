@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[工作小结180417]]></title>
+    <url>%2F2018%2F04%2F17%2Fweekly-2.html</url>
+    <content type="text"><![CDATA[工作小结180417netty websocket返回数据使用 TextWebSocketFrame，刚测试时使用String 返回给client，搞了好久都没有发现；nginx websocketnginx 1.3以后才支持 websocket 转发，我们的运维看错nginx 版本号和对应的测试机器，浪费了一个上午才发现；netty eventloopnetty4.1 的accept 只使用一个线程，即时设置多个也是只用一个线程；（来源于网络文章，未验证）每个IO channel 绑定一个 eventloop，eventloop 对应一个线程；所以就是 IO线程池都是被channel 占用的，如果 业务处理时间较长，则可以将channel 和 线程解绑，deregister方法即可；业务处理完成后，可以重新绑定 eventloop 进行 IO 操作；（上次看的Netty 分析，作个记录）netty 5的文档上说要优化上面这个逻辑的，不过不知道猴年马月；其他将项目的配置文件从属性文件改为 yaml来配置，果然清晰很多；mybatis generator 生成的mapper interface、xml文件不要修改，自己实现的查询、更新等数据库操作都放在另外的mapper代码中；]]></content>
+      <tags>
+        <tag>netty websocket</tag>
+        <tag>nginx websocket</tag>
+        <tag>netty channel eventloop</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[开发小结-20180331]]></title>
     <url>%2F2018%2F03%2F31%2Fweekly-1.html</url>
     <content type="text"><![CDATA[开发小结-20180331端口转发命令ssh -CfNg -R 9201:127.0.0.1:8090 root@ip 9201 为服务器端口8090 为本地端口将服务器9201的请求转发到本地8090端口spring boot mvc 设置 httpskeytool -genkey -alias tomcat -dname &quot;CN=Andy,OU=kfit,O=kfit,L=HaiDian,ST=BeiJing,C=CN&quot; -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 365 在application.properties中配置HTTPS#https端口号. server.port: 443 #证书的路径. server.ssl.key-store: classpath:keystore.p12 #证书密码，请修改为您自己证书的密码. server.ssl.key-store-password: 123456 #秘钥库类型 server.ssl.keyStoreType: PKCS12 #证书别名 server.ssl.keyAlias: tomcat 微信支付接口验证微信支付接口有两种参数签名方式MD5HmacSHA256有的接口只支持一种，不要搞错；]]></content>
