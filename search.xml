@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[工作小结180512]]></title>
+    <url>%2F2018%2F05%2F12%2Fweekly-3.html</url>
+    <content type="text"><![CDATA[工作小结180512微信小程序微信小程序这一套平台，真是微信的好棋，目前已经是蓬勃发展了啊！我司目前在做一个乘车码的项目，用微信小程序来实现；我认为小程序就是微信平台的H5，给页面文件换个后缀就装奇异果；mpvuempvue 是美团开源的小程序框架，将vue代码翻译为小程序代码；相当于让vue在小程序中运行；666！我大概照着文档改了下我司的小程序项目，的确简化了许多；并且支持ES6，让我这种java程序员感觉宾至如归；node_modules 目录下面的目录密密麻麻的让人头皮发麻！vue &amp; es 6我都是对着文档、示例代码边看边写的，so easy! 具体的等后续再总结]]></content>
+      <tags>
+        <tag>微信小程序</tag>
+        <tag>vue</tag>
+        <tag>mpvue</tag>
+        <tag>es6</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[工作小结180417]]></title>
     <url>%2F2018%2F04%2F17%2Fweekly-2.html</url>
     <content type="text"><![CDATA[工作小结180417netty websocket返回数据使用 TextWebSocketFrame，刚测试时使用String 返回给client，搞了好久都没有发现；nginx websocketnginx 1.3以后才支持 websocket 转发，我们的运维看错nginx 版本号和对应的测试机器，浪费了一个上午才发现；netty eventloopnetty4.1 的accept 只使用一个线程，即时设置多个也是只用一个线程；（来源于网络文章，未验证）每个IO channel 绑定一个 eventloop，eventloop 对应一个线程；所以就是 IO线程池都是被channel 占用的，如果 业务处理时间较长，则可以将channel 和 线程解绑，deregister方法即可；业务处理完成后，可以重新绑定 eventloop 进行 IO 操作；（上次看的Netty 分析，作个记录）netty 5的文档上说要优化上面这个逻辑的，不过不知道猴年马月；其他将项目的配置文件从属性文件改为 yaml来配置，果然清晰很多；mybatis generator 生成的mapper interface、xml文件不要修改，自己实现的查询、更新等数据库操作都放在另外的mapper代码中；]]></content>
