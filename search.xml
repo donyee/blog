@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[工作小结180811]]></title>
+    <url>%2F2018%2F08%2F11%2Fweekly-4.html</url>
+    <content type="text"><![CDATA[近期工作生活小结180811工作变化之前工作一直在广州总公司，今年公司的聚合支付业务都关闭；我做了一个月左右的小程序开发，但是合作方的业务流程一直拖着，小程序还没有上线；公司安排我到石家庄研究下区块链业务，看看能不能集成HF来实现一些创新；目前看还需要解决HF的权限问题…体重6月初来到石家庄，大概一个月后我的体重大概增加了8斤，233；顿时感觉压力好大，办了个100天的健身卡，隔天就去跑5KM，吃饭也控制了一下；哈哈哈 石家庄分公司旁边的小餐馆挺符合我口味的…海边休假上周带媳妇娃去她老家海边玩了两天，海边的确很凉快；闺女在游泳池敢于下去玩，海边沙滩不太敢下脚…拿个小水枪在泳池边玩的太开心了；我就比较惨了，在海边玩的没有经验，带了防晒霜根本没有涂，晒黑了许多、背部又痒又痛，现在还感觉有点痒；以后一定记得要防晒；在海边游泳还是很过瘾的、乘着浪晃来晃去的，海水真咸啊！！！]]></content>
+      <tags>
+        <tag>生活、度假</tag>
+        <tag>石家庄</tag>
+        <tag>海边游泳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hyperledger Q&A]]></title>
+    <url>%2F2018%2F06%2F08%2Ffabric-1.html</url>
+    <content type="text"><![CDATA[hyperledger Q&amp;Ablockchain ledger的数目？每channel 一个？PeerLedger、OrdererLedgerblockchain ledger由world state (KV db) + blockchain 组成world state 由RW set 来执行update，是否要广播同步？不需要，RWSet 是由peer orderer严格验证过的;RWSet 是由peer 根据tx proposal生成的node 的角色clientpeerorderer]]></content>
+      <tags>
+        <tag>hyperledger 分析</tag>
+        <tag>blockchain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Netty 详解之一]]></title>
+    <url>%2F2018%2F05%2F30%2Fnetty-1.html</url>
+    <content type="text"></content>
+      <tags>
+        <tag>netty 开发实践</tag>
+        <tag>netty 架构实践</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[工作小结180512]]></title>
     <url>%2F2018%2F05%2F12%2Fweekly-3.html</url>
-    <content type="text"><![CDATA[工作小结180512微信小程序微信小程序这一套平台，真是微信的好棋，目前已经是蓬勃发展了啊！我司目前在做一个乘车码的项目，用微信小程序来实现；我认为小程序就是微信平台的H5，给页面文件换个后缀就装奇异果；mpvuempvue 是美团开源的小程序框架，将vue代码翻译为小程序代码；相当于让vue在小程序中运行；666！我大概照着文档改了下我司的小程序项目，的确简化了许多；并且支持ES6，让我这种java程序员感觉宾至如归；node_modules 目录下面的目录密密麻麻的让人头皮发麻！vue &amp; es 6我都是对着文档、示例代码边看边写的，so easy! 具体的等后续再总结]]></content>
+    <content type="text"><![CDATA[工作小结180512微信小程序微信小程序这一套平台，真是微信的好棋，目前已经是蓬勃发展了啊！我司目前在做一个乘车码的项目，用微信小程序来实现；我认为小程序就是微信平台的H5，给页面文件换个后缀就装奇异果；mpvuempvue 是美团开源的小程序框架，将vue代码翻译为小程序代码；相当于让vue在小程序中运行；666！我大概照着文档改了下我司的小程序项目，的确简化了许多；并且支持ES6，让我这种java程序员感觉宾至如归；node_modules 目录下面的目录密密麻麻的让人头皮发麻…vue &amp; es 6我都是对着文档、示例代码边看边写的，so easy! 具体的等后续再总结]]></content>
       <tags>
         <tag>微信小程序</tag>
         <tag>vue</tag>
